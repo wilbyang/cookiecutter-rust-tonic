@@ -26,12 +26,13 @@ let mut client = GreeterClient::new(channel)
         .accept_compressed(CompressionEncoding::Gzip);
 ```
 ---
+### with_interceptor(server, check_auth);
 
 - tracing
 - tower
 - tls
 - authentication
-	with_interceptor(server, check_auth);
+- grpc-web	
 - interceptor
 - ...
 
