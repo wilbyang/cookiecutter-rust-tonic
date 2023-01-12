@@ -10,14 +10,16 @@ use tonic::codec::CompressionEncoding;
 ```
 
 
--- server
+server
+
 ```
 let service = GreeterServer::new(greeter)
        .send_compressed(CompressionEncoding::Gzip)
        .accept_compressed(CompressionEncoding::Gzip);
 ```
 
--- client
+client
+
 ```
 let mut client = GreeterClient::new(channel)
         .send_compressed(CompressionEncoding::Gzip)
@@ -29,6 +31,8 @@ let mut client = GreeterClient::new(channel)
 - tower
 - tls
 - authentication
+	with_interceptor(server, check_auth);
+- interceptor
 - ...
 
 
