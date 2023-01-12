@@ -14,7 +14,7 @@ def main():
 
     project_name = "{{ cookiecutter.project_name }}"
     project_slug = "{{ cookiecutter.project_slug }}"
-    architecture = "{{ cookiecutter.architecture }}"
+    
 
     templates_repo = "{{ cookiecutter._templates_repo }}"
     template_dir = os.path.join("templates", "{{ cookiecutter.template }}")
@@ -26,8 +26,8 @@ def main():
                     overwrite_if_exists=True,
                     extra_context={
                                     "project_name": project_name,
-                                    "project_slug": project_slug,
-                                    "architecture": architecture
+                                    "project_slug": project_slug
+                                    
                                   }
                 )
 
