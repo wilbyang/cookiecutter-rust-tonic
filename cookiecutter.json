@@ -4,5 +4,5 @@
     "template": [
       "hello-world"
     ],
-    "_templates_repo": "https://github.com/aws-samples/cookiecutter-aws-sam-rust"
+    "_templates_repo": "https://github.com/wilbyang/cookiecutter-rust-tonic"
   }
