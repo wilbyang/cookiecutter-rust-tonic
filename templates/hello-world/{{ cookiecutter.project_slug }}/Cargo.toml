@@ -7,8 +7,8 @@ edition = "2021"
 
 [dependencies]
 tokio = { version = "1", features = ["macros", "net", "rt-multi-thread"] }
-prost = "0.11"
-tonic = {version = "0.8", features = ["gzip"]}
+prost = "0.13"
+tonic = {version = "0.12", features = ["gzip"]}
 
 [build-dependencies]
-tonic-build = "0.8"
+tonic-build = "0.12"
